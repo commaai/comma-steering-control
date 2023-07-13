@@ -11,7 +11,7 @@ This is the largest dataset of vehicle dynamics ever released. It can also be us
 
 ## Dataset
 - Download the dataset from [HuggingFace](https://huggingface.co/datasets/commaai/commaSteeringControl/tree/main/data)
-- Checkout the example notebook at `visualize.ipynb`
+- Checkout the example notebook at [`visualize.ipynb`](https://github.com/commaai/comma-steering-control/blob/master/visualize.ipynb)
 ```
 # Data Structure
 data/
@@ -43,7 +43,7 @@ data/
 
 ![image](https://github.com/commaai/comma-steering-control/assets/1649262/f0195877-48ad-4664-85d6-7b2df12eb3d0)
 
-## Dataset notes
+## Dataset Notes
 - All values from different messages are interpolated and synced to time `t`
 - Steering torque is normalized in openpilot (to get `steer`), and further rate limits are applied (to get `steerFiltered`). `steerFiltered` is the best input signal.
 - The `latAccelSteeringAngle` is computed from steering angle and roll using the vehicle model from openpilot. This is the best signal to predict as `latAccelLocalizer`, which comes from a sensor fusion localizer on the comma three device, can be quite noisy.
