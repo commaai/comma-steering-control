@@ -10,7 +10,8 @@ and accelerates that effort.
 
 This is the largest dataset of vehicle dynamics ever released. It can also be used to develop or verify practical vehicle dynamics models for tire slip, road roll, lateral acceleration, understeer/oversteer, etc. We may add more fields for this goal in the future.
 
-![image](https://github.com/commaai/comma-steering-control/assets/1649262/57458e52-aea1-4b16-9f02-fa5a99559999)
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/c6f18767-26ac-4bc8-ab60-afdae197a300)
+
 
 ## Timeline
 - In [0.8.15](https://blog.comma.ai/0815release/#torque-controller),
@@ -53,8 +54,8 @@ data/
 | 12 | epsFwVersion          | EPS firmware version                                                             | str             |
 
 ```
-![image](https://github.com/commaai/comma-steering-control/assets/1649262/580ac4df-a84e-48ca-b1f6-8729d64905fb)
 
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/f0195877-48ad-4664-85d6-7b2df12eb3d0)
 
 
 ## Notes
@@ -67,4 +68,4 @@ data/
 - In some platforms, cars with different `epsFwVersion` have dramatically different steering behaviour, although this is not common.
 - Any algorithm that could be upstreamed to openpilot needs to be simple, fast, and reliable - similar to `torqued`, simple non-linear functions, or simple MLPs etc.
 
-![image](https://github.com/commaai/comma-steering-control/assets/1649262/51f9a4cc-deb8-4ec4-b835-60ad014a7569)
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/03905b06-6894-4b67-bd5b-77b1de552e62)
