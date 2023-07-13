@@ -1,15 +1,10 @@
----
-license: mit
-size_categories:
-- 100K<n<1M
----
-
 # commaSteeringControl
 
 `commaSteeringControl` is a dataset of car steering information from ~12500 hours of driving with openpilot engaged. We control steering on most 
 cars in openpilot using `steeringTorque`. This results in some lateral acceleration depending on both the car's internal vehicle dynamics and external factors (car speed, road roll, 
 etc). Learning this relationship is essential to have a robust feedback loop and to follow the planned trajectory. `commaSteeringControl` is the largest controls dataset of its kind, spanning 
 100+ platforms across 10+ brands.
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/57458e52-aea1-4b16-9f02-fa5a99559999)
 
 ## Timeline
 - In [0.8.15](https://blog.comma.ai/0815release/#torque-controller),
@@ -55,6 +50,7 @@ data/
 | 12 | epsFwVersion          | EPS firmware version                                                             | str             |
 
 ```
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/580ac4df-a84e-48ca-b1f6-8729d64905fb)
 
 
 
@@ -67,3 +63,5 @@ data/
 - There may be a lag in openpilot fully regaining steering control after `steeringPressed` which may have to be accounted for.
 - In some platforms, cars with different `epsFwVersion` have dramatically different steering behaviour, although this is not common.
 - Any algorithm that could be upstreamed to openpilot needs to be simple, fast, and reliable - similar to `torqued`, simple non-linear functions, or simple MLPs etc.
+
+![image](https://github.com/commaai/comma-steering-control/assets/1649262/51f9a4cc-deb8-4ec4-b835-60ad014a7569)
