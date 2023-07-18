@@ -34,8 +34,8 @@ data/
 |  6 | steer                 | Normalized steer torque                                                          | [-1, 1]         |
 |  7 | steerFiltered         | Normalized, rate limited steer torque                                            | [-1, 1]         |
 |  8 | roll                  | Road roll (rad)                                                                  | [-0.174, 0.174] |
-|  9 | latAccelSteeringAngle | Lateral acceleration requested from the planner                                  | [-∞, ∞]         |
-| 10 | latAccelDesired       | Lateral acceleration computed from the steering wheel angle and vehicle dynamics | [-∞, ∞]         |
+|  9 | latAccelDesired       | Lateral acceleration requested from the planner                                  | [-∞, ∞]         |
+| 10 | latAccelSteeringAngle | Lateral acceleration computed from the steering wheel angle and vehicle dynamics | [-∞, ∞]         |
 | 11 | latAccelLocalizer     | Lateral acceleration from the localizer                                          | [-∞, ∞]         |
 | 12 | epsFwVersion          | EPS firmware version                                                             | str             |
 
